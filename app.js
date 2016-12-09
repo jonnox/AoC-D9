@@ -3,7 +3,7 @@ var fs = require('fs');
 var length = 0;
 function parseCommand(line) {
     var l = line;
-    /*
+    /* Part 1
     while(l.length > 0) {
         var result = (/(\((\d+)x(\d+)\))/g).exec(l);
         if (result) {
@@ -17,6 +17,8 @@ function parseCommand(line) {
         }
     }
     */
+
+    /* Part 2 */
     length += decompress(l, 1);
 }
 
